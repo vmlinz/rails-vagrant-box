@@ -24,5 +24,3 @@ rbenv rehash
 # Install bundler
 gem install bundler
 
-# Install heroku toolbelt
-wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh

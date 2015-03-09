@@ -10,7 +10,7 @@ echo updating package information
 apt-add-repository -y ppa:brightbox/ruby-ng >/dev/null 2>&1
 apt-get -y update >/dev/null 2>&1
 
-# Install dev dependencis for compiling ruby with rbenv
+# Install dev dependencis for compiling ruby
 install 'development tools' autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
 
 install Git git
