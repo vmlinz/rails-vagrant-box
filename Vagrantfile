@@ -8,6 +8,8 @@ Vagrant.configure('2') do |config|
     vbox.memory = 2048
   end
 
+  config.vm.synced_folder "apps/", "/vagrant/apps"
+
   config.vm.network :forwarded_port, guest: 3000, host: 3030
   config.vm.provision :shell, path: 'bootstrap.sh', keep_color: true
   config.vm.provision :shell, path: 'install-rvm.sh', keep_color: true, privileged: false
