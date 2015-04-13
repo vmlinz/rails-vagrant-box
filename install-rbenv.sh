@@ -14,11 +14,11 @@ source ~vagrant/.profile
 echo 'Download ruby-build'
 git clone https://github.com/sstephenson/ruby-build.git ~vagrant/.rbenv/plugins/ruby-build
 
-# Install and use ruby 2.2.0
-echo 'Install ruby 2.2.0'
-CONFIGURE_OPTS="--disable-install-rdoc" rbenv install 2.2.0
+# Install and use ruby 2.2.1
+echo 'Install ruby 2.2.1'
+CONFIGURE_OPTS="--disable-install-rdoc" rbenv install 2.2.1
 rbenv rehash
-rbenv global 2.2.0
+rbenv global 2.2.1
 rbenv rehash
 
 # Install bundler
